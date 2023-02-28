@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="customer_columns" class="Magento\Customer\Ui\Component\Listing\Columns">
+        <column name="gender">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </column>
+        <column name="website_id">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </column>
+        <column name="created_in">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </column>
+        <column name="dob">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </column>
+        <column name="taxvat">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="componentDisabled" xsi:type="boolean">true</item>
+                </item>
+            </argument>
+        </column>
+
+        <!-- adding new column to customer grid -->
+
+        <column name="last_login" class="Suraj\CustomerAdminGridUpdate\Ui\Component\Listing\Column\LastLogin">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Last Login</item>
+                    <item name="sortOrder" xsi:type="number">993</item>
+                </item>
+            </argument>
+        </column>        
+
+    </columns>
+</listing>
